@@ -1,0 +1,55 @@
+body,html{
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding:0;
+}
+.sky{
+  background: linear-gradient(#000,blue,blue,lightblue);
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.stars{
+  width: 20px;
+  height:20px;
+  border-radius: 99px;
+  background: red;
+  animation-iteration-count: infinite;
+  animation-name: blinking;
+  position: absolute;
+  margin-top: 25%;
+  margin-left: 50%;
+  animation-duration: 1s;
+
+}
+.stars:first-child{
+  background: gold;
+  margin-left:12%;
+  margin-top: 40%;
+  animation-duration: 1.1s;
+}
+.stars:last-child{
+  background: hotpink;
+  margin-left: 90%;
+  margin-top: 5%;
+  animation-duration:0.8s;
+
+}
+@keyframes blinking {
+  20%{
+    transform: scale(0.2);
+    opacity: 0.5;
+    top: 1%;
+    left: 2%;
+  }
+  50%{
+    top:3%;
+    left: 8%;
+  }
+  100%{
+    top:0;
+    left:0;
+  }
+}
