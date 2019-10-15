@@ -1,0 +1,39 @@
+.body, html{
+    width:100vw;
+    height: 100vh;
+    position: relative;
+}
+.balls{
+    height: 50px;
+    width: 50px;
+    background: linear-gradient(35deg, red, salmon, pink, white);
+    position: absolute;
+    margin-top: 50px;
+    animation-name: falling;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    border-radius: 99px;
+}
+.balls:first-child{
+    animation-timing-function: ease-in-out;
+    left: 25%;
+}
+.balls:last-child{
+    animation-timing-function: linear;
+    left: 65%;
+}
+
+@keyframes falling {
+    0%{
+       top:25%; 
+    }
+    50%{
+      top: 75%;
+    }
+    75%{
+        top:0;
+    }
+    100%{
+        top:25%;
+    }
+}
