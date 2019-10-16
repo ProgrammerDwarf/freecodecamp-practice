@@ -25,3 +25,7 @@ It's like the header, but it contains the content that will guide you to related
 ## The audio tag
 
 As the title says, it serves as a component to listen to an audio track. If you set the `controls` attribute, you will place buttons to control the audio, such as playback, pause and progress bar.
+
+## The figure and caption
+
+This duo is excellent to put an image and a brief explaniation to the screen readers of the image. The `figcaption` goes inside the `figure` tag.
