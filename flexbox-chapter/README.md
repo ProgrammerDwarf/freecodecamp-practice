@@ -12,7 +12,8 @@ First, We need a parent element and second, its children elements.
 
 ### Properties for the parent
 
-- `display: flex`: this is the attribute that we have to assign to a parent element. All inside of this container will become a flexible element.
+- `display: flex`: this is the attribute that we have to assign to a parent element. The entire interior of this container will become a flexible element.
+Another thing about this property is that when used, the child elements will expand to fill the entire container evenly.
 - `flex-direction`: it has two main options: row and column, but there are other possibilities.
 - `row`
 - `column`
