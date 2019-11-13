@@ -34,20 +34,17 @@ The last two will not change the order of the elements on the HTML side. In fact
   - `center`: align items to the center. For rows, this vertically aligns items (equal space above and below the items). For columns, this horizontally aligns them (equal space to the left and right of the items).
   - `stretch`: stretch the items to fill the flex container. For example, rows items are stretched to fill the flex container top-to-bottom. This is the default value if no align-items value is specified.
   - `baseline`: align items to their baselines. Baseline is a text concept, think of it as the line that the letters sit on.
-
   - `wrap`: This will grab all our internal buddies and ordering ,by applying some calculation about its heights and width, in a new line if it is needed. Note that the child elements has to have its heights and widths well declarated.
-
-  -`nowrap`: this is the default setting, and does not wrap items.
-  -`wrap`: wraps items from left-to-right if they are in a row, or top-to-bottom if they are in a column.
-  -`wrap-reverse`: wraps items from right-to-left if they are in a row, or bottom-to-top if they are in a column.
+  - `nowrap`: this is the default setting, and does not wrap items.
+  - `wrap-reverse`: wraps items from right-to-left if they are in a row, or bottom-to-top if they are in a column.
 
 ## Child Items Behavior
 
   Inside the flexbox world We have to remember that the child are part of this system and they have their own properties.
 
-  -`flex-shrink`: It will assign a coefficient, it could be a positive number and as larger the number is it will shrink more than the other flex child. This will happen as long as the container and the child have no width declarated or the width of the container is less than the width of the child.
-  -`flex-grow`: The exact opposite of the shrink property, this will expand the children items inside the container within the relation of the number values on each child.
-  -`flex-basis`: Declaration of the initial size of the item within the container.
-  -`order`: The order property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.  
-  -`align-self`: The final property for flex items is align-self. This property allows you to adjust each item's alignment individually, instead of setting them all at once. This is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items. Align-self accepts the same values as align-items and will override any value set by the align-items property.
+- `flex-shrink`: It will assign a coefficient, it could be a positive number and as larger the number is it will shrink more than the other flex child. This will happen as long as the container and the child have no width declarated or the width of the container is less than the width of the child.
+- `flex-grow`: The exact opposite of the shrink property, this will expand the children items inside the container within the relation of the number values on each child.
+- `flex-basis`: Declaration of the initial size of the item within the container.
+- `order`: The order property is used to tell CSS the order of how flex items appear in the flex container. By default, items will appear in the same order they come in the source HTML. The property takes numbers as values, and negative numbers can be used.  
+- `align-self`: The final property for flex items is align-self. This property allows you to adjust each item's alignment individually, instead of setting them all at once. This is useful since other common adjustment techniques using the CSS properties float, clear, and vertical-align do not work on flex items. Align-self accepts the same values as align-items and will override any value set by the align-items property.
   
