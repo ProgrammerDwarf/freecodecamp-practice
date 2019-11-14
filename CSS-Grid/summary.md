@@ -43,5 +43,3 @@ Well, each line on the sides of the boxes is a mark and determines the beginning
 |------|------|------|
 | box3 | box4 | box5 |
 | box6 |
-
-                                  
