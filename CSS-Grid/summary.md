@@ -32,7 +32,9 @@ Example: `grid-temple-row: 1fr 20px 50%`. Here there will be three columns each 
 
 - `grid-gap`: this is the shorthand for setting the last two properties. Being the first grid-row-gap and the second grid-column-gap.
 
-- `grid-column`: Imagine a grid like this:  | box1 | box2 | box3   
+- `grid-column`: Imagine a grid like this:  
+
+| box1 | box2 | box3   
 |------|------|------
 | box4 | box5 | box6 
 
