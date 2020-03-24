@@ -34,9 +34,9 @@ Example: `grid-temple-row: 1fr 20px 50%`. Here there will be three columns each 
 
 - `grid-column`: Imagine a grid like this:  
 
-| box1 | box2 | box3|   
+| box1 | box2 | box3|
 |------|------|------
-| box4 | box5 | box6| 
+| box4 | box5 | box6|
 
 Well, each line on the sides of the boxes is a mark and determines the beginning or end of the column, the same with the horizontal ones, but the latter are related to the rows. If you want a box to fill a certain space, you must give it some coordinates. For example: We want box2 to pass the second mark and finish in the fourth, therefore, box3 will have to go down one row because box2 will be like:  
 
