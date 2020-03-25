@@ -1,0 +1,139 @@
+html * {box-sizing: border-box;}
+header {
+    display: flex;
+    width: 100%;
+    height: 98vh;
+    background-color: #353535;
+    justify-content: space-evenly;
+}
+.menu-container {
+    display: flex;
+    flex: 1 1 50%;
+    flex-direction: column;
+}
+.img-div {
+    flex: 1 1 50%;
+}
+.menu-nav {
+    flex: 1 1 50%; 
+}
+.menu{
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu li{
+    font-size: 2.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-transform: capitalize;
+    font-weight: normal;
+    color: whitesmoke;
+    margin-top: 2.5%;
+}
+.menu li:hover {
+    transition-duration: 0.5s;
+    color: goldenrod;
+}
+.menu li a{
+    text-decoration: none;
+    color: inherit
+}
+.title-box {
+    flex: 1 1 50%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.title-box h1{
+    font-size: 9em;
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: -14%;
+    position: absolute;
+    top:25%;
+    z-index: 10;
+    color:goldenrod;
+}
+.title-box p{
+    font-size: 4em;
+    font-family: 'Times New Roman', Times, serif;
+    z-index: 100;
+    color: grey;
+    position: absolute;
+    top:45%;
+    left: 5%;
+}
+.title-box p:last-child{
+    color: rgba(0, 0, 0,0.2);
+    left: 5%;
+    top: 20%;
+    position: absolute;
+    font-size: 4em;
+    z-index: 1;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;}
+
+.img-div img {
+    max-width: 100%;
+    height: auto;
+}
+.gallery-container {
+    display: inline-flex;
+    flex-wrap: wrap;
+}
+.gallery img{
+    flex: 1 1 30%;
+     width: 10%;
+}
+
+
+/* header {
+    max-width: 100vw;
+    height: 98vh;
+    position: relative;
+    font-family: Helvetica;
+    background-color: #353535;
+    background-size: contain;
+    background-image: url(images/johnavonportrait.jpg);
+    background-repeat: no-repeat;
+    background-position: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.title-box {
+    position: absolute;
+    bottom: 5vh;
+    left: 1vw;
+    width: 25vw;
+    background-color: rgba(0,0,0,0.8);
+    color: whitesmoke;
+    padding: 1% 5% 1%;
+    box-shadow: inset 0 1em rgb(247, 182, 4);
+    border-radius: 2px;
+    border: transparent;
+}
+.title-box p em {
+    font-size: 1.25em;
+}
+.menu-container{
+    position: absolute;
+    left: 1%;
+    top: 1%;
+}
+.menu{
+    display: flex;
+}
+.menu>li {
+    text-decoration: none;
+    list-style: none;
+    display: inline-block;
+    margin-right: 25%;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5em;
+    text-transform: capitalize;
+    font-weight: bold;
+    color: rgb(184, 184, 184);
+} */
