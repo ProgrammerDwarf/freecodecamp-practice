@@ -192,7 +192,7 @@ header {
   .image-contact{
       width: 350px;
       display: block;
-      margin: 2em 2em 0
+      margin: 2em 2em 0;
       flex: auto;
   }
   .image-contact img {
