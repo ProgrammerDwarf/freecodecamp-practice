@@ -1,18 +1,28 @@
-html * {box-sizing: border-box;}
+html, html *, * {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+.g-container{
+    display: flex;
+    flex-direction: column;
+}
+
+                    /*Header layouts*/
 header {
     display: flex;
     width: 100%;
-    height: 98vh;
+    height: 100vh;
     background-color: #353535;
     justify-content: space-evenly;
+    background-image: url(images/johnavonportrait.jpg);
+    background-position: right;
+    background-repeat: no-repeat;
 }
 .menu-container {
     display: flex;
     flex: 1 1 50%;
     flex-direction: column;
-}
-.img-div {
-    flex: 1 1 50%;
 }
 .menu-nav {
     flex: 1 1 50%; 
@@ -33,7 +43,7 @@ header {
 }
 .menu li:hover {
     transition-duration: 0.5s;
-    color: goldenrod;
+    color: #8f511a;
 }
 .menu li a{
     text-decoration: none;
@@ -52,8 +62,9 @@ header {
     margin-bottom: -14%;
     position: absolute;
     top:25%;
+    left: 10%;
     z-index: 10;
-    color:goldenrod;
+    color:#8f511a;
 }
 .title-box p{
     font-size: 4em;
@@ -75,65 +86,135 @@ header {
     font-weight: bold;
     text-transform: uppercase;}
 
-.img-div img {
+/* .img-div img {
     max-width: 100%;
-    height: auto;
-}
-.gallery-container {
-    display: inline-flex;
-    flex-wrap: wrap;
-}
-.gallery img{
-    flex: 1 1 30%;
-     width: 10%;
-}
+    height: auto; */
 
 
-/* header {
-    max-width: 100vw;
-    height: 98vh;
-    position: relative;
-    font-family: Helvetica;
+                /*    TRIBUTE INFO LAYOUT STYLES    */
+
+.tribute{
+    max-width: 100%;
+    line-height: 1.5em;
+    height: 100vh;
+    display: flex;
+    background-color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.tribute div {
+    flex: 1 1 33%;
+    padding: 1em;
+    
+
+}
+.tribute div h4 {
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 1em;
+    text-transform: uppercase;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #8f511a;
+
+}
+.tribute div:first-child,.tribute div:first-child h4 {
     background-color: #353535;
-    background-size: contain;
-    background-image: url(images/johnavonportrait.jpg);
-    background-repeat: no-repeat;
-    background-position: 90%;
+    color: whitesmoke;
+}
+
+                  /* GALLERY LAYOUT STYLES   */
+                
+.gallery-container{
+    width: 100%;
+    background-color: #353535;
     display: flex;
     justify-content: center;
+
+}
+.gallery{
+    display: flex;
+    flex-wrap: wrap;
+    width: 80vw;
+    justify-content: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;}
+    
+.gallery h4 {
+    font-size: 4em;
+    font-weight: lighter;
+    color: whitesmoke;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 1em;
 }
 
-.title-box {
-    position: absolute;
-    bottom: 5vh;
-    left: 1vw;
-    width: 25vw;
-    background-color: rgba(0,0,0,0.8);
-    color: whitesmoke;
-    padding: 1% 5% 1%;
-    box-shadow: inset 0 1em rgb(247, 182, 4);
-    border-radius: 2px;
-    border: transparent;
+.gallery img {
+    flex: auto;
+    height: 250px;
+    min-width: 150px;
+    margin: 0 0.2em 0.2em 0; /* Some gutter */
+    border-radius: 15px;
 }
-.title-box p em {
-    font-size: 1.25em;
-}
-.menu-container{
-    position: absolute;
-    left: 1%;
-    top: 1%;
-}
-.menu{
-    display: flex;
-}
-.menu>li {
-    text-decoration: none;
-    list-style: none;
-    display: inline-block;
-    margin-right: 25%;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 2.5em;
-    text-transform: capitalize;
-    font-weight: bold;
-    color: rgb(184, 184, 184);
-} */
+.gallery img:nth-child(2n+1) {
+    width: 250px;
+  }
+  .gallery img:nth-child(1n+1):nth-child(2n+2) {
+    width: 325px;
+  }
+  .gallery img:nth-child(1n+1):nth-child(2n+3) {
+    width: 180px;
+  }
+  .gallery img:nth-child(1n+1):nth-child(2n+4) {
+    width: 380px;
+  }
+  .gallery-images{
+      translate: 4em;
+      padding: 1.5em 0 1.5em 0;
+  }
+  .contact-container {
+      display: flex;
+      justify-content: center;
+      margin: 2em 0;
+  }
+  .contact-box {
+      background-color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      translate: 55px;
+  }
+  .contact-box  p {
+      font-size: 1.5em;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      flex: auto;
+      margin-left: 2em;
+      margin-right: 2em ;
+  }
+  .image-contact{
+      width: 350px;
+      display: block;
+      margin: 2em 2em 0
+      flex: auto;
+  }
+  .image-contact img {
+     border-radius: 100%;
+     height: auto;
+     width: 100%;
+  }
+
+  footer{
+      background-color: #353535;
+      justify-content: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  }
+  footer p {
+      margin: 0.5em 0 ;
+  }
+  footer p:first-child {
+      font-size: 2em;
+      text-transform: uppercase;
+  }
+  footer a:visited {
+      color: #8f511a;
+  }
